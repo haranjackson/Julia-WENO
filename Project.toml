@@ -1,0 +1,4 @@
+[deps]
+FastGaussQuadrature = "442a2c76-b920-505d-bb47-c5924d526838"
+Polynomials = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
