@@ -1,0 +1,10 @@
+name = "Weno"
+uuid = "8f016a4d-b365-4a69-a2a6-56e1ddc82e05"
+authors = ["Isaac Wheeler <ickaser@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+FastGaussQuadrature = "442a2c76-b920-505d-bb47-c5924d526838"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Polynomials = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
+PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
