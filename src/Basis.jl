@@ -1,9 +1,8 @@
-module Basis
+# module Basis
 
-export basis, nodes
+# export basis, nodes
 
-import FastGaussQuadrature: gausslegendre
-import Polynomials: Polynomial
+# import FastGaussQuadrature: gausslegendre
 
 function lagrange(x, w)
   """

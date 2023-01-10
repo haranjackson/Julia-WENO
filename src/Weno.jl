@@ -4,7 +4,7 @@ module Weno
 using FastGaussQuadrature
 using Polynomials
 using LinearAlgebra
-import Polynomials: integrate, derivative
+using Polynomials
 
 export coefficient_matrices, oscillation_indicator, weno
 
