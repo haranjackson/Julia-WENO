@@ -1,7 +1,11 @@
-# Julia-WENO
+# Weno.jl
 An optimized Julia implementation of the WENO reconstruction algorithm of any order. Based on the work of Dumbser, Hidalgo, and Zanotti in *High Order Space-Time Adaptive WENO Finite Volume Schemes for Non-Conservative Hyperbolic Systems* (DOI 10.1016/j.cma.2013.09.022).
 
 Implemented by @haranjackson initially, updated to comply with Julia 1.7 by @ickaser.
+
+## Mathematical details
+
+This implementation adds ghost cells *identical to the boundary cells*. This may not be appropriate for all problems.
 
 ## Usage
 Your input data must take the form of an array `u` with shape `(nx,ny,nz,nvar)`.
