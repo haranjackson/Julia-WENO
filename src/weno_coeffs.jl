@@ -212,12 +212,10 @@ function add_ghost_cells(arr, N, nx, ny, nz, nvar, d)
     ret[:, N+1:ny+N, :, :, :] = arr
     in0 = arr[:, 1, :, :, :]
     in1 = arr[:, ny, :, :, :]
-    # for i = 1:N
-    #   ret[:, i, :, :] = in0
-    #   ret[:, ny+N+i, :, :] = in1
-    # end
-    ret[:, 1:N, :, :, :] = in0
-    ret[:, ny+N+1:ny+2N, :, :, :] = in1
+    for i = 1:N
+      ret[:, i, :, :, :] = in0
+      ret[:, ny+N+i, :, :, :] = in1
+    end
     return ret
 
   else

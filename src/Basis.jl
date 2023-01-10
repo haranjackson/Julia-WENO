@@ -56,4 +56,3 @@ function basis(N)
   # return [lagrange(nodeArray, eye(N+1)[:,i]) for i in 1:N+1]
 end
 
-end   # module Basis
