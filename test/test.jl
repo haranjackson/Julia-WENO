@@ -1,22 +1,11 @@
 import PyPlot: plot
 using LinearAlgebra
 
-# import Basis: nodes
-# import Weno: coefficient_matrices, oscillation_indicator, weno
 
 function plot_weno(wh, var, N)
   n = size(wh, 1)
   x = repeat(0.0:n-1, inner=N+1)
-  # for i = 1:n
-  #   x[1+(i-1)*(N+1) : i*(N+1)] += nodes(N)
-  # end
   x += repeat(nodes(N), outer=n)
-  # y = zeros(n*(N+1))
-  # for i = 1:n
-  #   for j = 1:N+1
-  #     y[(i-1)*(N+1)+j] = wh[i, 1, 1, j, var]
-  #   end
-  # end
   y = reshape(wh[:, 1, 1, :, var]', :)
   plot(x,y)
 end
